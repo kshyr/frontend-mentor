@@ -1,0 +1,51 @@
+.profile {
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.profile-top {
+  position: absolute;
+  background-color: var(--blue);
+  height: 19rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.5rem 2.25rem;
+}
+
+.profile-top > img {
+  width: 5rem;
+  height: 5rem;
+  outline: 0.2rem solid white;
+  border-radius: 999px;
+}
+
+.profile-top > h5 {
+  color: var(--pale-blue);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.profile-top > h1 {
+  margin-top: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 2.75rem;
+}
+
+.timeframes {
+  position: absolute;
+  bottom: 0;
+  height: 9rem;
+  color: var(--desat-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem 2.25rem;
+  font-size: 1.15rem;
+  gap: 1.5rem;
+}

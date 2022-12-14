@@ -1,0 +1,81 @@
+.dashboard {
+  height: 35rem;
+  width: 75rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "profile work play study"
+    "profile exercise social self-care";
+}
+
+.dashboard > * {
+  border-radius: 1rem;
+  background-color: var(--blue);
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.work {
+  grid-area: work;
+  background-color: var(--peach);
+}
+
+.play {
+  grid-area: play;
+  background-color: var(--soft-blue);
+}
+
+.study {
+  grid-area: study;
+  background-color: var(--light-red);
+}
+
+.exercise {
+  grid-area: exercise;
+  background-color: var(--lime-green);
+}
+
+.social {
+  grid-area: social;
+  background-color: var(--violet);
+}
+
+.self-care {
+  grid-area: self-care;
+  background-color: var(--soft-orange);
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    height: 35rem;
+    width: 50rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "profile work play"
+      "profile study exercise"
+      "profile social self-care";
+  }
+}
+
+@media (max-width: 850px) {
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+      "profile"
+      "work"
+      "play"
+      "study"
+      "exercise"
+      "social"
+      "self-care";
+  }
+}

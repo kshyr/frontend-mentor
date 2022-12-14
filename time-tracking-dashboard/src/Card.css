@@ -1,0 +1,90 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.card > img {
+  position: absolute;
+  right: 1rem;
+}
+
+.card:not(.exercise) > img {
+  top: -0.5rem;
+}
+
+.card.social > img {
+  top: -0.75rem;
+}
+
+.card-top {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-blue);
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-top-info {
+  height: 100%;
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+.cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.1rem;
+}
+
+.circle {
+  height: 0.25rem;
+  width: 0.25rem;
+  background-color: var(--pale-blue);
+  border-radius: 999px;
+}
+
+.card-top-info .cont > h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.card-top-info > h1 {
+  margin-top: 1.25rem;
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.card-top-info > h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--pale-blue);
+}
